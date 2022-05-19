@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="outside-container">
+        <div class="top-half">
+            <img src="images/icon-star.svg" alt="star">
+            <h1 class="main-head">How did we do?</h1>
+            <p class="main-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+        <div class="bot-half">
+            <ul class="rating-list">
+                <li data-rating="1" class="rating-items">1</li>
+                <li data-rating="2" class="rating-items">2</li>
+                <li data-rating="3" class="rating-items">3</li>
+                <li data-rating="4" class="rating-items">4</li>
+                <li data-rating="5" class="rating-items">5</li>
+            </ul>
+            <span class="submission">Submit</span>
+        </div>
+        <div class="top-half-submitted hidden">
+            <img src="images/illustration-thank-you.svg" alt="device-image">
+            <p class="submission-overview">You selected <span class="rating-entry">0</span> out of 5</p>
+        </div>
+        <div class="bot-half-submitted hidden">
+            <h1 class="thankyou-head">Thank you!</h1>
+            <p class="thankyou-message">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(216, 12%, 8%);
+    font-family: Overpass, sans-serif;
+    color: white;
+    
+}
+
+.outside-container {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 400px;
+    background-color: hsl(213, 19%, 18%);
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+.top-half {
+    padding: 30px 30px 10px;
+}
+
+.top-half img {
+    max-height: 40px;
+    max-width: 40px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: hsl(214, 18%, 23%);
+    border-radius: 30px;
+}
+
+.main-head {
+    margin: 20px 0px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.main-text {
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.bot-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rating-list {
+    padding: 15px 30px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+.rating-items{
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(214, 18%, 23%);
+    color: hsl(216, 12%, 54%);
+    border-radius: 50%;
+    font-weight: 700;
+    transition: background-color .3s ease, color .3s ease;
+
+}
+
+.rating-items:hover{
+    cursor: pointer;
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+.submission {
+    margin: 30px;
+    padding: 15px 50px 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+}
+
+.submission:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.active {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.top-half-submitted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.top-half-submitted img {
+    padding: 20px 0px 30px;
+}
+
+.top-half-submitted .submission-overview {
+    padding: 9px 15px 5px;
+    background-color: hsl(214, 18%, 23%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bot-half-submitted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: all 0.3s ease;
+}
+
+.bot-half-submitted .thankyou-head{
+    padding-bottom: 15px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.bot-half-submitted .thankyou-message{
+    color: hsl(216, 12%, 54%);
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.alert{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
